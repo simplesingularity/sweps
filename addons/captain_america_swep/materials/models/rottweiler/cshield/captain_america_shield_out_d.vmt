@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/rottweiler/cshield/captain_america_shield_out_d"
+	$bumpmap "models/rottweiler/cshield/captain_america_shield_out_n"
+	$envmap "env_cubemap"
+
+	$phongexponent 5
+	$phongexponenttexture "models/shield/cashield_env"	
+	$phongboost 1.0
+	$phongfresnelranges "[0 0.5 1]"
+	$detail "detail/dt_ssteel1"
+}
