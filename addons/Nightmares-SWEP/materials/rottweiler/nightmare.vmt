@@ -1,0 +1,5 @@
+UnlitGeneric {
+	$basetexture "rottweiler/nightmare"
+	$nocull 1
+	
+}

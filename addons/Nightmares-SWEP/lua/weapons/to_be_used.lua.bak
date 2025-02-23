@@ -1,0 +1,26 @@
+
+-- Stolen from OddKast virus. Needed for one of my projects so thanks for the code
+-- https://steamcommunity.com/sharedfiles/filedetails/?id=3247252973
+-- To be used for casting nightmare spells on other players
+-- Just not sure how it's all going to work right now
+
+
+if (CLIENT and not LoveYou) then
+    LoveYou = true
+
+    local ScreenOverlayMaterial = Material("funny/funny") -- your picture here
+    local ScreenOverrideEnabled = true
+    local Delay = 0
+    local DelayNext = 0
+    
+    hook.Add("RenderScreenspaceEffects", "LoveYou:RenderScreenspaceEffects", function()
+	
+        if (ScreenOverrideEnabled) then
+            surface.SetDrawColor(255, 255, 255, 255)
+            surface.SetMaterial(ScreenOverlayMaterial)
+            surface.DrawTexturedRect(0, 0, ScrW(), ScrH())
+			surface.PlaySound("your sound here")
+        end
+    end )
+	
+end
